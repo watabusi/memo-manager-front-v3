@@ -1,3 +1,6 @@
 よくわからないことになっているが、とりあえず在宅時はvscでgithubDesktopと連携している
 
 この行はunder-developmentで追加
+
+在宅用：ローカルリポジトリおよびアプリ実行ディレクトリ
+C:\Users\ryota\OneDrive\ドキュメント\GitHub\memo-manager-front-v3
