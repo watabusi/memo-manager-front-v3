@@ -1,0 +1,11 @@
+.tags {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+
+button[name="tagDelete"] {
+    margin-left: 100px;
+}

@@ -1,0 +1,22 @@
+.memoList {
+  width: 500px;
+  height: 300px;
+  overflow-y: scroll;
+  float: left;
+}
+.memoList p {
+  border: 1px solid #333333;
+}
+.memoList a {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding-left: 5px;
+}
+.memoList a:hover {
+  background-color: #dcdcdc;
+}
+
+.sortMenu {
+  float: right;
+}

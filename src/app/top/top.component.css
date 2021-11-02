@@ -1,0 +1,39 @@
+.caption {
+    margin-top: 100px;
+}
+
+.box {
+    width: 650px;
+    height: 250px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    float: left;
+}
+
+.boxLine {
+    border: 1px solid #000;
+    margin: 5px;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    background-color: #dcdcdc;
+}
+
+.memoTitle {
+    font-size: 18px;
+}
+
+.memoDate {
+    font-size: 14px;
+}
+
+.memoTitle, .memoDate {
+    margin-right: 5px;
+    margin-left: 5px;
+}

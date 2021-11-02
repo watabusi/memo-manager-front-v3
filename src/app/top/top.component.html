@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<h2 class="caption">直近の編集メモ</h2>
+<div class="box">
+    <div class="boxLine" *ngFor="let memo of memos">
+        <a class="detailLink" routerLink="/memoDetail/{{memo.id}}">
+            <p class="memoTitle">{{memo.title | stringCut:20}} </p>
+            <p class="memoDate">更新日：{{memo.upday | date:"yyyy/MM/dd HH:mm"}}</p>
+        </a>
+    </div>
+</div>

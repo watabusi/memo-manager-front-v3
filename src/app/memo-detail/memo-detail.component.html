@@ -1,0 +1,16 @@
+<div class="main">
+  <h2 class="pageTitle">メモ閲覧・編集</h2>
+  <div *ngIf="memo">
+    <input type="text" name="title" [(ngModel)]="memo.title" />
+    <textarea name="memo" rows="4" cols="40" [(ngModel)]="memo.memo"></textarea>
+    <div class="tagSelect">
+      <div class="checkTag-pair">
+        <input type="checkbox" />
+        <label>仮タグ</label>
+        <br />
+      </div>
+    </div>
+    <input type="hidden" id="RealtimeClockArea2" (value)="(memo.upday)" />
+    <a routerLink="/memoView" (click)="update()">更新</a>
+  </div>
+</div>

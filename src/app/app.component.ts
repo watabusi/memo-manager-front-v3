@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'memo-manager-front-v2';
+  title = 'メモ管理アプリ';
 }
