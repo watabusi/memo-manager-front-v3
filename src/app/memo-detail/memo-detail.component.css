@@ -1,2 +1,20 @@
-h3{
+.title {
+    width: 250px;
+}
+
+.updateBtn {
+    border: 1px solid #333333;
+    width: 50px;
+    float: left
+}
+
+.updateBtn a {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.updateBtn a:hover {
+    background-color: #dcdcdc;
 }
