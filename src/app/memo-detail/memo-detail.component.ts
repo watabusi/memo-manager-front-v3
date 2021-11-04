@@ -4,6 +4,8 @@ import { Location } from '@angular/common';
 
 import { Memo } from '../service-memo/memo';
 import { MemoService } from '../service-memo/memo.service';
+import { Tag } from '../service-tag/tag';
+import { TagService } from '../service-tag/tag.service';
 
 @Component({
   selector: 'app-memo-detail',
@@ -14,13 +16,16 @@ export class MemoDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private memoService: MemoService,
+    private tagService: TagService,
     private location: Location
-  ) {}
+  ) { }
 
   memo: Memo | undefined;
+  tags: Tag[] = [];
 
   ngOnInit(): void {
     this.getMemo();
+    this.tagService.getTags().subscribe(tags => this.tags = tags);
   }
 
   getMemo(): void {
@@ -28,5 +33,5 @@ export class MemoDetailComponent implements OnInit {
     this.memoService.getMemo(id).subscribe((memo) => (this.memo = memo));
   }
 
-  update(): void {}
+  update(): void { }
 }
